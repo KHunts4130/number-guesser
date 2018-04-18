@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  	<title>Number guesser</title>
+  </head>
+    <body>
+      <header>
+        <h1><span class="header">Number</span> Guesser </h1>
+      </header>
+        <div class="center">
+          <input type="number" placeholder="Enter your guess" id="guessInput" class="guessInput"><label for="guessInput"></label>
+          <div class="twoButtons">
+            <button class="guess-button guessAndClear" id="guess-button" name="guess" disabled="true">Guess</button>
+            <button onclick="document.getElementById('guessInput').value = ''" class="clear-button guessAndClear" id="clear-button" type="reset"  name="clear" disabled="true">Clear</button>
+          </div>
+        </div>
+        <div id="guessString">
+          <h2>Your last guess was</h2>
+        </div>
+        <div id="guessDisplay">
+          <p id="guessValue">#</p>
+        </div>
+        <div id="LowOrHiDisplay">
+          <h2 id="rangeReply"></h2>
+          <h2 id="lowOrHi"></h2>
+        </div>
+        <div><br/>
+          <button class="resetButton" id="reset-button" disabled="true">Reset</button><label for="resetButton"></label>
+          <script type="text/javascript" src="script.js"></script>
+        </div>
+    </body>
+</html>
